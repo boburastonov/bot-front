@@ -12,7 +12,60 @@
 
 .wrapper {
   width: 100%;
-  max-width: 1360px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 12px;
+}
+
+.hero-wrapper {
+  max-width: 850px;
+  padding: 12px 12px;
+}
+
+.accordion-header {
+  @apply flex items-center w-full px-6 py-3 text-[24px] text-left bg-gray-200 border-b-2 cursor-pointer;
+}
+
+.accordion-header.active {
+  @apply bg-[#1a1c34] text-white cursor-pointer;
+}
+
+.accordion-header.active:hover {
+  @apply opacity-95;
+}
+
+.accordion-header.disabled {
+  @apply bg-[#a3a4ae] text-white cursor-not-allowed;
+}
+
+.accordion-header.disabled .accordion-number {
+  @apply inline-block text-center rounded-full w-10 h-10 mr-6 bg-[#737479];
+}
+
+.accordion-header.active .accordion-number {
+  @apply inline-block text-center rounded-full w-10 h-10 mr-6 bg-[#017c65];
+}
+
+.accordion-body {
+  @apply bg-white border border-gray-300;
+}
+
+.input-field {
+  @apply w-full p-2 mt-2 border border-gray-300 rounded;
+}
+
+.accordion-region-header {
+  @apply border-t-0 border border-solid border-[#ccc];
+}
+
+.accordion-region-header.active {
+  @apply bg-transparent text-black;
+}
+
+.accordion-region-header.disabled {
+  @apply bg-[#1a1c34ab] text-white;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: black;
 }
