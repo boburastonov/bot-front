@@ -47,7 +47,7 @@
 }
 
 .accordion-body {
-  @apply bg-white border border-gray-300;
+  @apply bg-white;
 }
 
 .input-field {
@@ -68,4 +68,16 @@
 
 input[type="checkbox"]:checked {
   accent-color: black;
+}
+
+.modal-pr:active > div {
+  transform: scale(1.03);
+}
+
+.licence-text {
+  margin-top: 0 !important;
+}
+
+.btn {
+  margin-top: 40px !important;
 }
